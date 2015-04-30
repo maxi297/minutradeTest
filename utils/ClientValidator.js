@@ -59,7 +59,7 @@ var calculateSecondCpfValidationDigit = function (cpf) {
 };
 
 var isNameValid = function (name) {
-    var lettersRegex = /^[a-zA-Z áéíóúüñç]+$/;
+    var lettersRegex = /^[a-zA-Z áéíóúüñç-]+$/;
     return name.length > 0 && lettersRegex.test(name);
 };
 
