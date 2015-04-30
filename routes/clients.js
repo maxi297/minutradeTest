@@ -66,3 +66,31 @@ var areInformationValid = function(client) {
     // TODO
     return false;
 };
+
+exports.deleteClient = function(req, res) {
+    Client.findOne({cpf: req.params.cpf}, function (err, client) {
+        if (!err) {
+            if (client) {
+                client.remove();
+                res.status(200).send({
+                    message: 'client with cpf ' + req.params.cpf + ' deleted successfully'
+                });
+            } else {
+                res.status(404).send({
+                    errorCode: 'CLIENT_NOT_FOUND',
+                    message: 'client ' + req.params.cpf + ' was not found'
+                });
+            }
+        } else {
+            console.error(err);
+            if (err.name === 'CastError') {
+                res.status(404).send({
+                    errorCode: 'CLIENT_NOT_FOUND',
+                    message: 'client ' + req.params.cpf + ' was not found'
+                });
+            } else {
+                res.status(500).send(err);
+            }
+        }
+    });
+};

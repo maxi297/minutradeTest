@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/clients', client.getClients);
 app.post('/clients', client.createClient);
 app.get('/clients/:cpf', client.getClient);
+app.delete('/clients/:cpf', client.deleteClient);
 
 var port = 3000;
 app.listen(port);
