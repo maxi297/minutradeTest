@@ -72,6 +72,19 @@ describe("InvalidEmailClientValidation", function () {
     });
 });
 
+describe("InvalidMaritalStatusClientValidation", function () {
+    it("should return false when marital status is invalid", function () {
+        var client = {cpf: VALID_CPF,
+            name: VALID_NAME,
+            email: VALID_EMAIL,
+            maritalStatus: INVALID_MARITAL_STATUS,
+            address: VALID_ADDRESS,
+            phoneNumbers: VALID_PHONE_NUMBERS
+        };
+        assert.ok(!ClientValidator.validate(client));
+    });
+});
+
 describe("InvalidAddressClientValidation", function () {
     it("should return false when address is invalid", function () {
         var client = {cpf: VALID_CPF,
