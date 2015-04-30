@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "main": "index.js",
   "dependencies": {
-    "express": "~4.8.1"
+    "express": "~4.8.1",
+    "mongoose": "~3.8.8",
+    "body-parser": "~1.6.1"
   },
   "scripts": {
     "test": ""
