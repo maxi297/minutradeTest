@@ -10,7 +10,7 @@
 ### Install Node JS
 * Windows : http://nodejs.org/download/
 * Mac : http://nodejs.org/download/
-* Ubuntu 14.04 (pour autre version linux : [Documentation Node Linux](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager))
+* Ubuntu 14.04 (for other distribution : [Documentation Node Linux](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager))
 ```
 sudo apt-get update
 sudo apt-get install nodejs
