@@ -1,0 +1,16 @@
+{
+  "name": "MinutradeClientAPI",
+  "version": "0.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "express": "~4.8.1"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxi297/minutradeTest.git"
+  },
+  "author": "Maxime Carbonneau-Leclerc"
+}
