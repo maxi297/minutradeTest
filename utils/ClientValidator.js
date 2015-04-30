@@ -6,6 +6,7 @@ ClientValidator.validate = function (client) {
 }
 
 var areInformationValid = function(client) {
+    console.log('isMaritalStatusValid = ' + isMaritalStatusValid(client.maritalStatus));
     return isCpfValid(client.cpf) &&
         isNameValid(client.name) &&
         isEmailValid(client.email) &&
@@ -28,6 +29,7 @@ var isCpfValid = function(cpf) {
     if (secondDigit != parseInt(cpf.charAt(10))) {
         return false;
     }
+
     return true;
 };
 
@@ -70,7 +72,7 @@ var isEmailValid = function (email) {
 
 var isMaritalStatusValid = function (maritalStatus) {
     var possibleStatus = [ "single", "married", "divorced", "widowed" ];
-    return possibleStatus.indexOf(maritalStatus) >= 0;
+    return possibleStatus.indexOf(maritalStatus.toLowerCase()) >= 0;
 };
 
 var isAddressValid = function (address) {
