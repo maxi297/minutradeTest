@@ -1,11 +1,12 @@
 var express = require('express');
+var mongoose = require('mongoose');
+var mongoUri = 'mongodb://localhost/minutrade';
+mongoose.connect(mongoUri);
 
+var client = require('./routes/clients');
 var app = express();
-var toto = function(req, res) {
-    console.log('ok');
-    res.status(200).send('godo');
-}
 
-app.get('/', toto);
+app.get('/clients', client.getClients);
+
 var port = 3000;
 app.listen(port);
