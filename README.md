@@ -45,3 +45,16 @@ In command line:
 ```
 node index.js
 ```
+
+## Run the tests
+
+### Install Mocha
+In command line: 
+```
+npm install mocha -g
+```
+
+### Execute
+```
+mocha test/utils/ClientValidator.js
+```
