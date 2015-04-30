@@ -76,7 +76,10 @@ Use something like Advanced REST client to do the following calls:
 
 #### Create a new client
 <code>POST</code> localhost:3000/clients
-Example of body: { "cpf":"11438374798","name":"test","email":"godo1@godo.com","maritalStatus":"single","address":"123 rue des Saules","phoneNumbers": ["11231234567", "11231234560"]}
+
+Example of body: 
+
+{ "cpf":"11438374798","name":"test","email":"godo1@godo.com","maritalStatus":"single","address":"123 rue des Saules","phoneNumbers": ["11231234567", "11231234560"]}
 
 #### Remove a client
 <code>DELETE</code> localhost:3000/clients/:cpf
