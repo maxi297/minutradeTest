@@ -6,7 +6,6 @@ ClientValidator.validate = function (client) {
 }
 
 var areInformationValid = function(client) {
-    console.log('isMaritalStatusValid = ' + isMaritalStatusValid(client.maritalStatus));
     return isCpfValid(client.cpf) &&
         isNameValid(client.name) &&
         isEmailValid(client.email) &&
