@@ -79,7 +79,9 @@ Use something like Advanced REST client to do the following calls:
 
 Example of body: 
 
-{ "cpf":"11438374798","name":"test","email":"godo1@godo.com","maritalStatus":"single","address":"123 rue des Saules","phoneNumbers": ["11231234567", "11231234560"]}
+{"cpf":"11438374798","name":"test","email":"godo1@godo.com","maritalStatus":"single","address":"123 rue des Saules","phoneNumbers": ["11231234567", "11231234560"]}
+
+IMPORTANT: I wasn't sure of all the validation to be done on each field so I did my best and I made it easy to change: just go to utils/ClientValidator.js and modify the private method validating the corresponding field.
 
 #### Remove a client
 <code>DELETE</code> localhost:3000/clients/:cpf
