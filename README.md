@@ -62,8 +62,9 @@ mocha test/utils/ClientValidator.js
 ## API guide
 
 ### Why MongoDB and NodeJS ?
-It was hard for me to see the scope outside of this test. More information about the context and the future use of this API could have narrowed my choice between RDBMS or NoSQL and my choice for a REST API framework. Since I didn't have this information, I decided to have fun with this test and to learn something new. I choose MongoDB and NodeJS because I never use those before. 
+It was hard for me to see the scope outside of this test. More information about the context and the future use of this API could have narrowed my choice between RDBMS or NoSQL and my choice for a REST API framework. Since I didn't have this information, I decided to have fun with this test and to learn something new. I choose MongoDB and NodeJS because I never use those before and I've heard a lot about it. 
 For a small project like that, I would probably have used Spring MVC for the REST API because I am used to it (which is not a very good reason in a professional context) and I would have implemented my data layer using JSON in text files because for something that small, it removes some dependencies and it is easier to implement.
+I really enjoyed using MongoDB and I think for anything that is CRUD and will scale horizontaly, it is an interesting option.
 
 ### Basic API documentation 
 Use something like Advanced REST client to do the following calls:
